@@ -21,6 +21,7 @@ on post-fs
     start boot-hal-1-1
 
 on init
+    export PATH /sbin:/system/bin:/vendor/bin:/vendor/bin/hw
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
 
 on fs
